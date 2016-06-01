@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>SK - JS demo app</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <style>
+            body {
+                padding-top: 70px;
+                /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+            }
+            .btn-primary {
+                box-shadow: 1px 2px 5px #000000;
+            }
+            .btn-info {
+                box-shadow: 1px 2px 5px #000000;
+            }
+
+        </style>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a data-toggle="pill" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a data-toggle="pill" href="#calculator">Calculator</a>
+                        </li>
+                        <li>
+                            <a data-toggle="pill" href="#xmlhttprequest">XMLHttpRequest demo</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>Home</h3>
+                    <p>Let's find some fun here</p>
+                </div>
+                <div id="calculator" class="tab-pane fade">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="first_number">First Number:</label>
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control" id="first_number" placeholder="Enter number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="second_number">Second Number:</label>
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control" id="second_number" placeholder="Enter number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" onclick="calculator.add();">Add</button>
+                            <button type="button" class="btn btn-primary" onclick="calculator.subtract();">Subtract</button>
+                            <button type="button" class="btn btn-primary" onclick="calculator.multiply();">Multiply</button>
+                            <button type="button" class="btn btn-primary" onclick="calculator.divide();">Divide</button>
+                            <button type="button" class="btn btn-info" onclick="calculator.factorial();">Factorial</button>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="result">Result</label>
+                            <div class="col-sm-8">
+                                <input type="number" class="form-control" id="result" placeholder="Result" disabled>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="xmlhttprequest" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="booksTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery Version 1.11.1 -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!--SK exercises scripts-->
+        <script src="js/main.js"></script>
+        <script src="js/calculator.js"></script>
+        <script src="js/books.js"></script>
+
+        <!-- SK lectures exercises -->
+        <!-- <script src="js/todos.js"></script> -->
+
+    </body>
+
+</html>

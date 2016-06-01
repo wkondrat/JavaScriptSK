@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "First book",
+    "authors": "Jan Kowalski",
+    "status": "FREE"
+  },
+  {
+    "id": 2,
+    "title": "Second book",
+    "authors": "Zbigniew Nowak",
+    "status": "FREE"
+  },
+  {
+    "id": 3,
+    "title": "Third book",
+    "authors": "Janusz Jankowski",
+    "status": "FREE"
+  },
+  {
+    "id": 4,
+    "title": "Lokomotywa",
+    "authors": "Julian Tuwim",
+    "status": "FREE"
+  },
+  {
+    "id": 5,
+    "title": "Lalka",
+    "authors": "Boleslaw Prus",
+    "status": "FREE"
+  }
+]
