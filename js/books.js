@@ -1,6 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
-// var url = "books.json";
-var url = "http://localhost:8080/webstore/rest/books";
+var url = "books.json";
+// var url = "http://localhost:8080/webstore/rest/books";
 
 xmlhttp.open("GET", url, true);
 

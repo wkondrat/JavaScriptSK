@@ -1,12 +1,12 @@
 {
   "name": "sk_js_app",
   "description": "SK JS demo",
-  "author": "Tomasz Szewcow",
+  "author": "Wojciech Kondratowicz",
   "version": "0.0.1",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tszewcow/starter_kit_js_app.git"
+    "url": "https://github.com/wkondrat/JavaScriptSK"
   },
   "scripts": {
    "test": "karma start karma.conf.js"
